@@ -15,15 +15,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Grille à 4 colonnes */
-    grid-template-rows: repeat(5, 1fr);  /* 5 lignes pour les boutons */
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    grid-template-rows: repeat(5, 1fr);  /* 5 lignes */
     gap: 10px;
     grid-template-areas: 
         "clear divide multiply add"
         "seven eight nine subtract"
         "four five six decimal"
         "one two three equals"
-        "zero zero zero zero";  /* Positionnement du bouton 0 en bas au centre */
+        "zero zero zero zero";  /* Le bouton 0 prend toute la ligne */
 }
 
 #display {
@@ -88,15 +88,5 @@ button#decimal:active {
 
 button#zero {
     background-color: #00BCD4; /* Couleur cyan pour le bouton 0 */
-    grid-column: span 4; /* Le bouton "0" prend toute la largeur */
-}
-
-button#zero:active {
-    background-color: #0097A7; /* Teinte cyan plus foncée au clic */
-}
-
-/* Style général pour les boutons */
-button:hover {
-    opacity: 0.8;
-}
+    grid-column: span 4
 
