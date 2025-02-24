@@ -65,5 +65,36 @@ button#add, button#subtract, button#multiply, button#divide {
     background-color: #ff9800; /* Couleur orange pour les opérations */
 }
 
-button#add:active, butt
+button#add:active, button#subtract:active, button#multiply:active, button#divide:active {
+    background-color: #fb8c00; /* Teinte orange plus foncée au clic */
+}
 
+button#equals {
+    background-color: #2196F3; /* Couleur bleue pour le bouton "=" */
+    grid-column: span 4; /* Le bouton "=" prend toute la largeur */
+}
+
+button#equals:active {
+    background-color: #1976D2; /* Teinte bleue plus foncée au clic */
+}
+
+button#decimal {
+    background-color: #9C27B0; /* Couleur violette pour le bouton "." */
+}
+
+button#decimal:active {
+    background-color: #8e24aa; /* Teinte violette plus foncée au clic */
+}
+
+button#zero {
+    background-color: #00BCD4; /* Couleur cyan pour le bouton 0 */
+}
+
+button#zero:active {
+    background-color: #0097A7; /* Teinte cyan plus foncée au clic */
+}
+
+/* Style général pour les boutons */
+button:hover {
+    opacity: 0.8;
+}
