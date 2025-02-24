@@ -16,75 +16,15 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Grille à 4 colonnes */
-    grid-template-rows: repeat(4, 1fr);  /* 4 lignes pour les boutons */
+    grid-template-rows: repeat(5, 1fr);  /* 5 lignes pour les boutons */
     gap: 10px;
     grid-template-areas: 
-        "clear divide multiply"
+        "clear divide multiply add"
         "seven eight nine subtract"
-        "four five six add"
-        "one two three decimal"
-        "equals equals equals equals";  /* Positionnement du bouton "=" au bas */
+        "four five six decimal"
+        "one two three equals"
+        "zero zero zero zero";  /* Positionnement du bouton 0 en bas au centre */
 }
 
 #display {
-    background-color: #f0e68c; /* Fond jaune clair pour l'affichage */
-    color: #333;
-    margin-bottom: 20px;
-    padding: 15px;
-    text-align: right;
-    font-size: 2em;
-    border-radius: 5px;
-    grid-column: span 4; /* Le display prend toute la largeur */
-}
-
-button {
-    width: 100%;
-    height: 50px;
-    margin: 5px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #4CAF50; /* Couleur verte pour les chiffres */
-    transition: background-color 0.3s ease;
-}
-
-button:active {
-    background-color: #45a049; /* Teinte plus foncée au clic */
-}
-
-button#clear {
-    background-color: #f44336; /* Couleur rouge pour le bouton "C" */
-}
-
-button#clear:active {
-    background-color: #e53935; /* Teinte rouge plus foncée au clic */
-}
-
-button#add, button#subtract, button#multiply, button#divide {
-    background-color: #ff9800; /* Couleur orange pour les opérations */
-}
-
-button#add:active, button#subtract:active, button#multiply:active, button#divide:active {
-    background-color: #fb8c00; /* Teinte orange plus foncée au clic */
-}
-
-button#equals {
-    background-color: #2196F3; /* Couleur bleue pour le bouton "=" */
-    grid-column: span 4; /* Le bouton "=" prend toute la largeur en bas */
-}
-
-button#equals:active {
-    background-color: #1976D2; /* Teinte bleue plus foncée au clic */
-}
-
-button#decimal {
-    background-color: #9C27B0; /* Couleur violette pour le bouton "." */
-}
-
-button#decimal:active {
-    background-color: #8e24aa; /* Teinte violette plus foncée au clic */
-}
-
-button#zero {
-    background-color: #00BCD4; /* Couleur cyan pour le bouton 
+    backgr
