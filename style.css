@@ -23,7 +23,7 @@ body {
         "seven eight nine subtract"
         "four five six decimal"
         "one two three equals"
-        "zero zero zero zero";  /* Le bouton 0 prend toute la ligne en bas */
+        "zero zero zero zero";  /* Le bouton 0 est maintenant dans la même ligne que les autres chiffres */
 }
 
 #display {
@@ -88,7 +88,6 @@ button#decimal:active {
 
 button#zero {
     background-color: #00BCD4; /* Couleur cyan pour le bouton 0 */
-    grid-column: span 4; /* Le bouton "0" prend toute la largeur */
 }
 
 button#zero:active {
