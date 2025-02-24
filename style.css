@@ -23,5 +23,47 @@ body {
         "seven eight nine subtract"
         "four five six decimal"
         "zero one two three"
-        "equals equals equals equals"; /* Le bouton = 
+        "equals equals equals equals"; /* Le bouton = prend toute la ligne */
+}
+
+#display {
+    background-color: #f0e68c; /* Fond jaune clair pour l'affichage */
+    color: #333;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: right;
+    font-size: 2em;
+    border-radius: 5px;
+    grid-column: span 4; /* Le display prend toute la largeur */
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #4CAF50; /* Couleur verte pour les chiffres */
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    background-color: #45a049; /* Teinte plus foncée au clic */
+}
+
+button#clear {
+    background-color: #f44336; /* Couleur rouge pour le bouton "C" */
+}
+
+button#clear:active {
+    background-color: #e53935; /* Teinte rouge plus foncée au clic */
+}
+
+button#add, button#subtract, button#multiply, button#divide {
+    background-color: #ff9800; /* Couleur orange pour les opérations */
+}
+
+button#add:active, butt
 
